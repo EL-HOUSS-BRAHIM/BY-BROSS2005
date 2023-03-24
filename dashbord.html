@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Status Checker</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+        text-align: left;
+        padding: 8px;
+      }
+
+      td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .status-up {
+        color: green;
+      }
+
+      .status-down {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Website Status Checker</h1>
+    <table>
+      <tr>
+        <th>Website</th>
+        <th>Status</th>
+      </tr>
+      <?php
+        $websites = array(
+          'http://firstchk.ml',
+          'http://midnghite-chk0.rf.gd',
+          'http://1-midnghite-chk2.rf.gd',
+          'http://midnight-chk3.rf.gd',
+          'http://2-midnghite-chk2.rf.gd',
+          'http://v3-midnghite.rf.gd',
+          'http://v4-midnghite.rf.gd',
+          'http://v5-midnghite.rf.gd',
+          'http://v6-midnghite.rf.gd',
+          'http://v7-midnghite.rf.gd',
+          'http://v8-midnghite.rf.gd',
+          'http://sk-chk-by-bross-v1.rf.gd',
+          'http://sk-chk-by-bross.rf.gd',
+          'http://sk-gen-by-bross.rf.gd',
+          'http://midnghite-chk1.rf.gd'
+        );
+
+        foreach ($websites as $website) {
+          $status = get_http_response_code($website);
+          echo "<tr>";
+          echo "<td><a href='$website'>$website</a></td>";
+          echo "<td><span class='" . ($status == 200 ? 'status-up' : 'status-down') . "'>" . ($status == 200 ? 'up' : 'down') . "</span></td>";
+
+          echo "</tr>";
+        }
+
+        function get_http_response_code($url) {
+          $headers = get_headers($url);
+          return substr($headers[0], 9, 3);
+        }
+      ?>
+    </table>
+    <script>
+      var statusSpans = document.querySelectorAll('.status-up, .status-down');
+      for (var i = 0; i < statusSpans.length; i++) {
+        statusSpans[i].addEventListener('click', function() {
+          alert('This website is currently ' + this.textContent + '.');
+        });
+      }
+    </script>
+  </body>
+</html>

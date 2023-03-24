@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="loading">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Jeff</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css">
+    	 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  </head>
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before mb-3">
+        </div>
+    <div class="content-body">
+  	<div class="mt-2"></div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-body text-center">
+    <h4 class="upa neon"><strong>チぱぶ</strong></h4>
+					<h4 class="fer neon"><strong></strong></h4>
+
+<textarea rows="12" class="form-control text-center neon form-checker mb-2" placeholder="PUT YOUR CARDS HERE"></textarea>
+				<textarea rows="1" class="form-control text-center neon" style="width: 50%; float: left ;"  id="sec" placeholder="sk_live_xxxxxx"></textarea>
+			<textarea rows="1" class="form-control text-center neon" style="width: 50%; float: left ;"  id="cst" placeholder="amount"></textarea>
+            <textarea rows="1" class="form-control text-center neon" style="width: 50%; float: left ;"  id="idx" placeholder="telegram id"></textarea>
+				<select id="cur" class="form-control" style="width: 50%;">
+					<option value="USD" selected="selected" label="US dollar">USD</option>
+					<option value="EUR" label="Euro">EUR</option>
+					<option value="GBP" label="Pound sterling">GBP</option>
+					<option disabled>──────────</option>
+					<option value="AED" label="United Arab Emirates dirham">AED</option>
+					<option value="AFN" label="Afghan afghani">AFN</option>
+					<option value="ALL" label="Albanian lek">ALL</option>
+					<option value="AMD" label="Armenian dram">AMD</option>
+					<option value="ANG" label="Netherlands Antillean guilder">ANG</option>
+					<option value="AOA" label="Angolan kwanza">AOA</option>
+					<option value="ARS" label="Argentine peso">ARS</option>
+					<option value="AUD" label="Australian dollar">AUD</option>
+					<option value="AWG" label="Aruban florin">AWG</option>
+					<option value="AZN" label="Azerbaijani manat">AZN</option>
+					<option value="BAM" label="Bosnia and Herzegovina convertible mark">BAM</option>
+					<option value="BBD" label="Barbadian dollar">BBD</option>
+					<option value="BDT" label="Bangladeshi taka">BDT</option>
+					<option value="BGN" label="Bulgarian lev">BGN</option>
+					<option value="BMD" label="Bermudian dollar">BMD</option>
+					<option value="BND" label="Brunei dollar">BND</option>
+					<option value="BOB" label="Bolivian boliviano">BOB</option>
+					<option value="BRL" label="Brazilian real">BRL</option>
+					<option value="BSD" label="Bahamian dollar">BSD</option>
+					<option value="BTN" label="Bhutanese ngultrum">BTN</option>
+					<option value="BWP" label="Botswana pula">BWP</option>
+					<option value="BYN" label="Belarusian ruble">BYN</option>
+					<option value="BZD" label="Belize dollar">BZD</option>
+					<option value="CAD" label="Canadian dollar">CAD</option>
+					<option value="CDF" label="Congolese franc">CDF</option>
+					<option value="CHF" label="Swiss franc">CHF</option>
+					<option value="CNY" label="Chinese yuan">CNY</option>
+					<option value="COP" label="Colombian peso">COP</option>
+					<option value="CRC" label="Costa Rican colón">CRC</option>
+					<option value="CUC" label="Cuban convertible peso">CUC</option>
+					<option value="CUP" label="Cuban peso">CUP</option>
+					<option value="CVE" label="Cape Verdean escudo">CVE</option>
+					<option value="CZK" label="Czech koruna">CZK</option>
+					<option value="DKK" label="Danish krone">DKK</option>
+					<option value="DOP" label="Dominican peso">DOP</option>
+					<option value="DZD" label="Algerian dinar">DZD</option>
+					<option value="EGP" label="Egyptian pound">EGP</option>
+					<option value="ERN" label="Eritrean nakfa">ERN</option>
+					<option value="ETB" label="Ethiopian birr">ETB</option>
+					<option value="EUR" label="EURO">EUR</option>
+					<option value="FJD" label="Fijian dollar">FJD</option>
+					<option value="FKP" label="Falkland Islands pound">FKP</option>
+					<option value="GBP" label="British pound">GBP</option>
+					<option value="GEL" label="Georgian lari">GEL</option>
+					<option value="GGP" label="Guernsey pound">GGP</option>
+					<option value="GHS" label="Ghanaian cedi">GHS</option>
+					<option value="GIP" label="Gibraltar pound">GIP</option>
+					<option value="GMD" label="Gambian dalasi">GMD</option>
+					<option value="GTQ" label="Guatemalan quetzal">GTQ</option>
+					<option value="GYD" label="Guyanese dollar">GYD</option>
+					<option value="HKD" label="Hong Kong dollar">HKD</option>
+					<option value="HNL" label="Honduran lempira">HNL</option>
+					<option value="HRK" label="Croatian kuna">HRK</option>
+					<option value="HTG" label="Haitian gourde">HTG</option>
+					<option value="HUF" label="Hungarian forint">HUF</option>
+					<option value="IDR" label="Indonesian rupiah">IDR</option>
+					<option value="ILS" label="Israeli new shekel">ILS</option>
+					<option value="IMP" label="Manx pound">IMP</option>
+					<option value="INR" label="Indian rupee">INR</option>
+					<option value="IQD" label="Iraqi dinar">IQD</option>
+					<option value="IRR" label="Iranian rial">IRR</option>
+					<option value="ISK" label="Icelandic króna">ISK</option>
+					<option value="JEP" label="Jersey pound">JEP</option>
+					<option value="JMD" label="Jamaican dollar">JMD</option>
+					<option value="KES" label="Kenyan shilling">KES</option>
+					<option value="KGS" label="Kyrgyzstani som">KGS</option>
+					<option value="KHR" label="Cambodian riel">KHR</option>
+					<option value="KID" label="Kiribati dollar">KID</option>
+					<option value="KPW" label="North Korean won">KPW</option>
+					<option value="KYD" label="Cayman Islands dollar">KYD</option>
+					<option value="KZT" label="Kazakhstani tenge">KZT</option>
+					<option value="LAK" label="Lao kip">LAK</option>
+					<option value="LBP" label="Lebanese pound">LBP</option>
+					<option value="LKR" label="Sri Lankan rupee">LKR</option>
+					<option value="LRD" label="Liberian dollar">LRD</option>
+					<option value="LSL" label="Lesotho loti">LSL</option>
+					<option value="LYD" label="Libyan dinar">LYD</option>
+					<option value="MAD" label="Moroccan dirham">MAD</option>
+					<option value="MDL" label="Moldovan leu">MDL</option>
+					<option value="MKD" label="Macedonian denar">MKD</option>
+					<option value="MMK" label="Burmese kyat">MMK</option>
+					<option value="MNT" label="Mongolian tögrög">MNT</option>
+					<option value="MOP" label="Macanese pataca">MOP</option>
+					<option value="MRU" label="Mauritanian ouguiya">MRU</option>
+					<option value="MUR" label="Mauritian rupee">MUR</option>
+					<option value="MVR" label="Maldivian rufiyaa">MVR</option>
+					<option value="MWK" label="Malawian kwacha">MWK</option>
+					<option value="MXN" label="Mexican peso">MXN</option>
+					<option value="MYR" label="Malaysian ringgit">MYR</option>
+					<option value="MZN" label="Mozambican metical">MZN</option>
+					<option value="NAD" label="Namibian dollar">NAD</option>
+					<option value="NGN" label="Nigerian naira">NGN</option>
+					<option value="NIO" label="Nicaraguan córdoba">NIO</option>
+					<option value="NOK" label="Norwegian krone">NOK</option>
+					<option value="NPR" label="Nepalese rupee">NPR</option>
+					<option value="NZD" label="New Zealand dollar">NZD</option>
+					<option value="PAB" label="Panamanian balboa">PAB</option>
+					<option value="PEN" label="Peruvian sol">PEN</option>
+					<option value="PGK" label="Papua New Guinean kina">PGK</option>
+					<option value="PHP" label="Philippine peso">PHP</option>
+					<option value="PKR" label="Pakistani rupee">PKR</option>
+					<option value="PLN" label="Polish złoty">PLN</option>
+					<option value="PRB" label="Transnistrian ruble">PRB</option>
+					<option value="QAR" label="Qatari riyal">QAR</option>
+					<option value="RON" label="Romanian leu">RON</option>
+					<option value="RSD" label="Serbian dinar">RSD</option>
+					<option value="RUB" label="Russian ruble">RUB</option>
+					<option value="SAR" label="Saudi riyal">SAR</option>
+					<option value="SEK" label="Swedish krona">SEK</option>
+					<option value="SGD" label="Singapore dollar">SGD</option>
+					<option value="SHP" label="Saint Helena pound">SHP</option>
+					<option value="SLL" label="Sierra Leonean leone">SLL</option>
+					<option value="SLS" label="Somaliland shilling">SLS</option>
+					<option value="SOS" label="Somali shilling">SOS</option>
+					<option value="SRD" label="Surinamese dollar">SRD</option>
+					<option value="SSP" label="South Sudanese pound">SSP</option>
+					<option value="STN" label="São Tomé and Príncipe dobra">STN</option>
+					<option value="SYP" label="Syrian pound">SYP</option>
+					<option value="SZL" label="Swazi lilangeni">SZL</option>
+					<option value="THB" label="Thai baht">THB</option>
+					<option value="TJS" label="Tajikistani somoni">TJS</option>
+					<option value="TMT" label="Turkmenistan manat">TMT</option>
+					<option value="TOP" label="Tongan paʻanga">TOP</option>
+					<option value="TRY" label="Turkish lira">TRY</option>
+					<option value="TTD" label="Trinidad and Tobago dollar">TTD</option>
+					<option value="TVD" label="Tuvaluan dollar">TVD</option>
+					<option value="TWD" label="New Taiwan dollar">TWD</option>
+					<option value="TZS" label="Tanzanian shilling">TZS</option>
+					<option value="UAH" label="Ukrainian hryvnia">UAH</option>
+					<option value="USD" label="United States dollar">USD</option>
+					<option value="UYU" label="Uruguayan peso">UYU</option>
+					<option value="UZS" label="Uzbekistani soʻm">UZS</option>
+					<option value="VES" label="Venezuelan bolívar soberano">VES</option>>
+					<option value="WST" label="Samoan tālā">WST</option>
+					<option value="XCD" label="Eastern Caribbean dollar">XCD</option>
+					<option value="ZAR" label="South African rand">ZAR</option>
+					<option value="ZMW" label="Zambian kwacha">ZMW</option>
+					<option value="ZWB" label="Zimbabwean bonds">ZWB</option>
+					</select>
+    
+			
+                	<select name="gate" id="gate" class="form-control" style="margin-bottom: 5px;">
+				    <option style="background:rgba(16, 15, 154, 0.281);color:rgb(255, 208, 0);color:white" value="gate/cvv.php">Stripe Charge CVV</option>				
+				    <option style="background:rgba(16, 15, 154, 0.281);color:rgb(255, 208, 0);color:white" value="gate/ccn.php">Stripe Charge CCN</option>
+                    </select>
+                    <button class="btn btn-play btn-glow bg-cyan text-white" style="width: 49%; float: left;"><i class="fa fa-play"></i>START</button>
+				    <button class="btn btn-stop btn-glow bg-red text-white" style="width: 49%; float: right;" disabled><i class="fa fa-stop"></i>STOP</button>
+				</div>
+			        </div>
+		                </div>
+<div class="col-md-4">
+  <div class="card mb-2">
+  	<div class="card-body">
+
+<h5 style="color:white">TOTAL :<span class="badge badge-primary float-right carregadas">0</span></h5><hr>
+
+<h5 style="color:white">CHARGED :<span class="badge badge-success float-right charge">0</span></h5><hr>
+
+<h5 style="color:white">CVV :<span class="badge badge-success float-right cvvs">0</span></h5><hr>
+
+<h5 style="color:white">CCN :<span class="badge badge-success float-right aprovadas">0</span></h5><hr>
+
+<h5 style="color:white">DEAD :<span class="badge badge-danger float-right reprovadas">0</span></h5><hr>
+                  </div>
+                </div>
+              </div>
+    
+
+          		<div class="col-xl-12">
+	    		<div class="card">
+				<div class="card-body">
+				<div class="float-right">
+					<button type="show" class="btn btn-primary btn-sm show-charge"><i class="fa fa-eye-slash"></i></button>
+					<button class="btn btn-success btn-sm btn-copy1"><i class="fa fa-copy"></i></button>
+					</div>
+					<h4 style="color:white" class="card-title mb-1"><i class="fa fa-check-circle text-success"></i> CHARGED</h4>
+        			<div id='lista_charge'></div>
+				</div>
+			</div>
+		</div>
+       		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+					<button type="show" class="btn btn-primary btn-sm show-live"><i class="fa fa-eye-slash"></i></button>
+					<button class="btn btn-success btn-sm btn-copy2"><i class="fa fa-copy"></i></button>
+					</div>
+					<h4 style="color:white" class="card-title mb-1"><i class="fa fa-check text-success"></i> CVV</h4>
+			<div id='lista_cvvs'></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+						<button type="show" class="btn btn-primary btn-sm show-lives"><i class="fa fa-eye-slash"></i></button>
+					<button class="btn btn-success btn-sm btn-copy"><i class="fa fa-copy"></i></button>
+					</div>
+					<h4 style="color:white" class="card-title mb-1"><i class="fa fa-times text-success"></i> CCN</h4>
+			<div id='lista_aprovadas'></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+						<button type='hidden' class="btn btn-primary btn-sm show-dies"><i class="fa fa-eye"></i></button>
+					<button class="btn btn-danger btn-sm btn-trash"><i class="fa fa-trash"></i></button>
+					</div>
+					<h4 style="color:white" class="card-title mb-1"><i class="fa fa-times text-danger"></i> DECLINED</h4>
+						<div style='display: none;' id='lista_reprovadas'></div>
+				</div>
+			</div>
+		</div>
+
+</section>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="theme-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
+
+<style>
+    footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #0f141a;
+  color: #0f141a;
+}
+
+ body {
+      background-color: #0f141a;
+    }
+    .form-checker {
+      background-color: #0f141a;
+      color: #ffffff;
+    }
+    .form-checker:focus {
+      background-color: #0f141a;
+      color: #ffffff;
+    }
+    .form-control {
+      background-color: #0f141a;
+      color: #ffffff;
+    }
+    .form-control:focus {
+      background-color: #0f141a;
+      color: #ffffff;
+    }
+    .form-control::-webkit-input-placeholder {
+      color: #ffffff;
+    }
+    .form-control::-moz-placeholder {
+      color: #ffffff;
+    }
+    .card-body{
+        background-color: #161d24;
+        color: #ffffff;
+    }
+ .light-border {
+    border: 2px solid;
+    animation: pulse 2s ease-in-out infinite;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulse {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+.neon::before, neon::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(90deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 200%;
+    width: calc(100% + 4.5px);
+    height: calc(100% + 4.5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.neon::after{
+    filter: blur(40px);
+}
+
+
+
+
+
+    
+</style>
+<script>
+document.body.style.backgroundColor = 'rgba(15, 20, 26, 1)';
+const element = document.querySelector('.fer');
+const element1 = document.querySelector('.upa');
+
+const changeColor = () => {
+  element.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  element1.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+};
+
+setInterval(changeColor, 1000);
+const text = 'Ｆｅｒｎａｎｄｅｚ';
+
+let index = 0;
+let isErasing = false;
+
+const type = () => {
+  if (index >= text.length) {
+    isErasing = true;
+  }
+  if (index <= 1) {
+    isErasing = false;
+  }
+  if (isErasing) {
+    element.textContent = element.textContent.substring(0, element.textContent.length - 1);
+    index--;
+  } else {
+    element.textContent += text.charAt(index);
+    index++;
+  }
+};
+
+
+
+setInterval(type, 100);
+
+
+let colors = ['red', 'green', 'blue'];
+let textarea = document.querySelector('textarea');
+
+setInterval(function() {
+  let color = colors[Math.floor(Math.random() * colors.length)];
+  textarea.style.outlineColor = color;
+}, 1000);
+
+
+$(document).ready(function(){
+
+
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false
+})
+
+
+
+$('.show-charge').click(function(){
+var type = $('.show-charge').attr('type');
+$('#lista_charge').slideToggle();
+if(type == 'show'){
+$('.show-charge').html('<i class="fa fa-eye"></i>');
+$('.show-charge').attr('type', 'hidden');
+}else{
+$('.show-charge').html('<i class="fa fa-eye-slash"></i>');
+$('.show-charge').attr('type', 'show');
+}});
+
+$('.show-live').click(function(){
+var type = $('.show-live').attr('type');
+$('#lista_cvvs').slideToggle();
+if(type == 'show'){
+$('.show-live').html('<i class="fa fa-eye"></i>');
+$('.show-live').attr('type', 'hidden');
+}else{
+$('.show-live').html('<i class="fa fa-eye-slash"></i>');
+$('.show-live').attr('type', 'show');
+}});
+
+$('.show-lives').click(function(){
+var type = $('.show-lives').attr('type');
+$('#lista_aprovadas').slideToggle();
+if(type == 'show'){
+$('.show-lives').html('<i class="fa fa-eye"></i>');
+$('.show-lives').attr('type', 'hidden');
+}else{
+$('.show-lives').html('<i class="fa fa-eye-slash"></i>');
+$('.show-lives').attr('type', 'show');
+}});
+
+$('.show-dies').click(function(){
+var type = $('.show-dies').attr('type');
+$('#lista_reprovadas').slideToggle();
+if(type == 'show'){
+$('.show-dies').html('<i class="fa fa-eye"></i>');
+$('.show-dies').attr('type', 'hidden');
+}else{
+$('.show-dies').html('<i class="fa fa-eye-slash"></i>');
+$('.show-dies').attr('type', 'show');
+}});
+
+$('.btn-trash').click(function(){
+	Swal.fire({title: 'REMOVED DEAD', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+$('#lista_reprovadas').text('');
+});
+
+$('.btn-copy1').click(function(){
+	Swal.fire({title: 'COPIED CHARGED', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+var lista_charge = document.getElementById('lista_charge').innerText;
+var textarea = document.createElement("textarea");
+textarea.value = lista_charge;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');           document.body.removeChild(textarea);
+});
+
+$('.btn-copy2').click(function(){
+	Swal.fire({title: 'COPIED CVV', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+var lista_live = document.getElementById('lista_cvvs').innerText;
+var textarea = document.createElement("textarea");
+textarea.value = lista_live;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');           document.body.removeChild(textarea);
+});
+
+$('.btn-copy').click(function(){
+	Swal.fire({title: 'COPIED CCN', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+var lista_lives = document.getElementById('lista_aprovadas').innerText;
+var textarea = document.createElement("textarea");
+textarea.value = lista_lives;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');           document.body.removeChild(textarea);
+});
+
+
+$('.btn-play').click(function(){
+var sec = $("#sec").val();
+var cst = $("#cst").val();
+var cur = $("#cur").val();
+var idx = $("#idx").val();
+var e = document.getElementById("gate");
+var gate = e.options[e.selectedIndex].value;
+var lista = $('.form-checker').val().trim();
+var array = lista.split('\n');
+var charge = 0, live = 0, lives = 0, dies = 0, testadas = 0, txt = '';
+if(!lista){
+	Swal.fire({title: 'You did not provide a card :(', icon: 'error', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+	return false;
+}
+if(!cst){
+	Swal.fire({title: 'Please input amount :(', icon: 'error', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+	return false;
+}
+if(!cur){
+	Swal.fire({title: 'Please input currency :(', icon: 'error', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+	return false;
+}
+
+Swal.fire({title: 'Your cards are being checked...', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+
+var line = array.filter(function(value){
+if(value.trim() !== ""){
+	txt += value.trim() + '\n';
+	return value.trim();
+}
+});
+
+function randomcolor() {
+        return Math.floor(Math.random() * 255);
+    }
+
+/*
+var line = array.filter(function(value){
+return(value.trim() !== "");
+});
+*/
+
+var total = line.length;
+
+
+/*
+line.forEach(function(value){
+txt += value + '\n';
+});
+*/
+
+$('.form-checker').val(txt.trim());
+if(total > 500000){
+  Swal.fire({title: 'YOU CAN NOT PERFORM THAT ACTION: REDUCE NUMBER OF CARDS TO <4999', icon: 'warning', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+  return false;
+}
+
+$('.carregadas').text(total);
+$('.btn-play').attr('disabled', true);
+$('.btn-stop').attr('disabled', false);
+
+line.forEach(function(data){
+var callBack = $.ajax({
+	url: gate + '?lista=' + data + '&sec=' + sec + '&cst=' + cst + '&cur=' + cur + '&idx=' + idx,
+	success: function(retorno){
+		if(retorno.indexOf("CHARGED") >= 0){
+			$('#lista_charge').append(retorno);
+			removelinha();
+			charge = charge +1;
+			Swal.fire({title: 'CHARGED +1', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+			}
+			else if(retorno.indexOf("CVV") >= 0){
+			$('#lista_cvvs').append(retorno);
+			removelinha();
+			live = live +1;
+			Swal.fire({title: 'CVV +1', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+		    }
+			else if(retorno.indexOf("CCN") >= 0){
+			$('#lista_aprovadas').append(retorno);
+			removelinha();
+			lives = lives +1;
+			Swal.fire({title: 'CCN +1', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+		    }else{
+			$('#lista_reprovadas').append(retorno);
+			removelinha();
+			dies = dies +1;
+		}
+		testadas = charge + live + lives + dies;
+	    $('.charge').text(charge);
+	    $('.cvvs').text(live);
+		$('.aprovadas').text(lives);
+		$('.reprovadas').text(dies);
+		$('.testadas').text(testadas);
+
+		if(testadas == total){
+			Swal.fire({title: 'ALL CARDS HAS BEEN CHECKED', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+			$('.btn-play').attr('disabled', false);
+			$('.btn-stop').attr('disabled', true);
+		}
+        }
+      });
+      $('.btn-stop').click(function(){
+      Swal.fire({title: 'PAUSED', icon: 'warning', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+      $('.btn-play').attr('disabled', false);
+      $('.btn-stop').attr('disabled', true);
+      	callBack.abort();
+      	return false;
+      });
+    });
+  });
+});
+
+function removelinha() {
+var lines = $('.form-checker').val().split('\n');
+lines.splice(0, 1);
+$('.form-checker').val(lines.join("\n"));
+}
+
+
+</script>
+
+  </body>
+</html>
